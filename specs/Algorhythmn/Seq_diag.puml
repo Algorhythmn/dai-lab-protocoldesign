@@ -1,0 +1,13 @@
+@startuml
+Client -> Server : Open TCP connection
+Client -> Server : ADD 10 20
+Server -> Client : 30
+Server -> Client : Closes connection
+@enduml
+
+@startuml
+Client -> Server : Open TCP connection
+Client -> Server : AD 10 20
+Server -> Client : Error in requested operation
+Server -> Client : Closes connection
+@enduml
